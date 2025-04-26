@@ -1,13 +1,14 @@
 return {
-  "xiantang/darcula-dark.nvim",
+  'Mofiqul/dracula.nvim',
+  name = "dracula",
   config = function()
-    require("darcula").setup({
-      override = function(c)
-        return {
-          dark = "#202020",
-        }
-      end,
-      opt = {}
+    require("dracula").setup({
+      colors = {
+        bg = "#1E1F29"
+      },
+      show_end_of_buffer = true, -- default false
+      italic_comment = true, -- default false
     })
+    vim.cmd[[colorscheme dracula]]
   end
 }
