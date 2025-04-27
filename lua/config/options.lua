@@ -34,3 +34,7 @@ vt.hlsearch = true
 vt.ignorecase = true
 vt.smartcase = true
 
+vt.shell = 'pwsh'
+vt.shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command'
+vt.shellquote = ''
+vt.shellxquote = ''
